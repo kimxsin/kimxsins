@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/petharmonydb?useSSL=false&serverTimezone=UTC
+    username: petharmony
+    password: petharmony
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+websocket:
+  path: /chat

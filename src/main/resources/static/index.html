@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>실시간 채팅 애플리케이션</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 -->
+    <script src="javascript.js"></script> <!-- JavaScript 파일 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.0/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</head>
+<body onload="connect()">
+<div class="chat-container">
+    <div class="users">
+        <h3>사용자 목록</h3>
+        <ul id="userList">
+            <!-- 사용자 목록 동적으로 추가 -->
+        </ul>
+    </div>
+    <div class="chat-box">
+        <h3 id="chatWith">채팅 상대: 없음</h3>
+        <div id="chatHistory" class="chat-history">
+            <!-- 채팅 기록 표시 -->
+        </div>
+        <input type="text" id="messageInput" placeholder="메시지를 입력하세요..." />
+        <button onclick="sendMessage()">전송</button>
+    </div>
+
+</div>
+</body>
+</html>
